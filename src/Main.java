@@ -1,6 +1,6 @@
 import java.util.*;
 // Cryptography Project 4, Part 1.
-// By Kd Kwarteng, Ximena Coloma, Alyza Keo, and Mohammed Alsabty
+// By Kd Kwarteng
 
 public class Main {
     //S-box
@@ -47,11 +47,10 @@ public class Main {
         String xToBin =  String.format("%" + 3 + "s",
                 Integer.toBinaryString(x)).replaceAll(" ", "0");
         String x_primeToBin = String.format("%" + 3 + "s",
-                Integer.toBinaryString(x_prime)).replaceAll(" ", "0");
-
+                Integer.toBinaryString(x_prime)).replaceAll(" ", "0");   //Credit: https://www.techiedelight.com/convert-integer-binary-string-of-specific-length-java/
         StringBuffer sb = new StringBuffer();
         for (int i = 0; i < xToBin.length(); i++) {
-            sb.append(xToBin.charAt(i)^x_primeToBin.charAt(i));
+            sb.append(xToBin.charAt(i)^x_primeToBin.charAt(i));  //Credit: https://www.tutorialspoint.com/importance-of-xor-operator-in-java 
         }
         String bin = sb.toString();
         int ret = Integer.parseInt(bin, 2);
