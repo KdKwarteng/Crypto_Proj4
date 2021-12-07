@@ -1,0 +1,1 @@
+This program considers the simple substitution permutation network and an S-box. The S-box used has input {0, 1, 2, 3, 4, 5, 6, 7}, and output {6, 5, 1, 0, 3, 2, 7, 4}. 
